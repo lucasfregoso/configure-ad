@@ -41,14 +41,15 @@ Step 2
 <img width="998" alt="Screenshot 2023-09-29 at 3 42 57 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/439a2600-be1b-48b7-b3e7-34f05c883de2">
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next, we are going to ensure that there is connectivity between the client and the domain controller. So we log in to client 1 with remote desktop and ping DC-1's private ip address (10.0.0.4) with 'ping -t (private ip address)' and this is known as a perpetual ping. When we first do this we notice that we are getting a 'request timed out' message, which lets us know that DC-1's windows firewall is blocking ICMP traffic. To counter this all we do is go to DC-1's 'Windows Defender Firewall with Advanced Security' and go to Inbound Rules and enable rules with ICMP Echo Request. Once we do that we can go back to client 1 and now see that our ping is working. 
 </p>
 <br />
 
+Step 3
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1389" alt="Screenshot 2023-09-29 at 4 08 10 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/237cff7a-ff6c-4002-a12b-07f307e64c20">
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next we want to install Active Directory and in IT, it contains critical information about your environment, connect the users to a network that allows them to get their work done, and what users have access to what. First, we go to DC-1 and open up Server Manager, go to add roles and features, click on next until we get to Server Roles, check the Active Directory Domain Services, keep clicking on next until we get to Deploy Configuration. Once there, we add a new forest and this will allow us to create a name for our domain as well as creating our environment for our users. Keep clicking next right after that until we Install and DC-1 will restart after that allowing Active Directory to be fully installed.
 </p>
 <br />
