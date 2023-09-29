@@ -69,7 +69,7 @@ Next we proceed to make an admin and normal user account in Active Directory. We
 Step 4
 <p>
 <img width="1389" alt="Screenshot 2023-09-29 at 4 40 08 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/e3d0d363-4c3f-4164-a892-bb36df70ff81">
-------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
 <img width="1389" alt="Screenshot 2023-09-29 at 4 40 22 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/f5d17ebc-26b2-47a9-be0f-47872d8e08da">
 </p>
 <p>
