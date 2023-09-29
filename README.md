@@ -14,8 +14,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server 2022
-- Windows 10 (21H2)
+- Windows Server Datacenter 2022 Azure Edition
+- Windows 10 (22H2)
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
@@ -26,11 +26,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
+Step 1
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1577" alt="Screenshot 2023-09-29 at 3 22 54 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/b39546d6-7c85-47bc-b66e-9e05688d6155">
 </p>
+So before we get into the lab, we first created two virtual machines on Azure simply by going to 'virtual machines', 'create', and then proceed with inputting the right information. Our first virtual machine will be known as 'DC-1' aka domain controller, which essentially acts as a gatekeeper and gives permission to whether or not a user is authorized to access any IT information. The second one is 'Client-1', which will be our user. Next, we must set our domain controller's NIC private ip address to static because it will allow it to be discovered by users across the network making it much easier for schools or companies for example, when their employees or students use the computers they could just log in with their provide username/password allowing the network to recognize it.  
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
