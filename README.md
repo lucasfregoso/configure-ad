@@ -35,8 +35,10 @@ So before we get into the lab, we first created two virtual machines on Azure si
 </p>
 <br />
 
+Step 2
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1389" alt="Screenshot 2023-09-29 at 3 45 44 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/a6a92493-8286-487b-9eac-3e3d93a0524d">
+<img width="998" alt="Screenshot 2023-09-29 at 3 42 57 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/439a2600-be1b-48b7-b3e7-34f05c883de2">
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
