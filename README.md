@@ -57,7 +57,7 @@ Next we want to install Active Directory and in IT, it contains critical informa
 Step 4
 <p>
 <img width="1389" alt="Screenshot 2023-09-29 at 4 40 08 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/e3d0d363-4c3f-4164-a892-bb36df70ff81">
-------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
 <img width="1389" alt="Screenshot 2023-09-29 at 4 40 22 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/f5d17ebc-26b2-47a9-be0f-47872d8e08da">
 </p>
 <p>
@@ -66,11 +66,10 @@ Next we proceed to make an admin and normal user account in Active Directory. We
 <br />
 
 
-Step 4
+Step 5
 <p>
 <img width="1389" alt="Screenshot 2023-09-29 at 4 40 08 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/e3d0d363-4c3f-4164-a892-bb36df70ff81">
----------------------------------------------------------------------------------------------------------------------------------------------
-<img width="1389" alt="Screenshot 2023-09-29 at 4 40 22 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/f5d17ebc-26b2-47a9-be0f-47872d8e08da">
+
 </p>
 <p>
 Next we proceed to make an admin and normal user account in Active Directory. We go to Active Directory Users and Computers and under our domain name, which I named 'domainexpansion' we create two new Organizational Units and call one '_EMPLOYEES' and the other '_ADMINS.' Next we decide to make a new user since in the work life environment many if not all accounts are tied to some human identity, which helps idenify who is who as well as keeping things organize. So you'll notice that the we are first logged in as 'labuser', which is just an example user for us to do labs as shown in the Command Prompt and then once we make our new user 'Lucas Flames' we recheck on the Command Prompt and see that we are now 'lucas_admin.' Lastly, once we create our own unique user we are going to add them to the domain admins group, which will allow them make changes to the domain while giving us the lab conductor to see how everything works.
