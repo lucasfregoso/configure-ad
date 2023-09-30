@@ -70,7 +70,8 @@ Next we proceed to make an admin and normal user account in Active Directory. We
 Step 5
 <p>
 <img width="1389" alt="Screenshot 2023-09-29 at 5 34 41 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/fc9052a5-4eac-48e3-8942-77c755bc9967">
-<img width="1643" alt="Screenshot 2023-09-29 at 5 35 24 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/47ec2979-9e4b-4b4c-9971-b2c6a5de38ac">
+-------------------------------------------------------------------------------------------------------------------------------------------
+  <img width="1643" alt="Screenshot 2023-09-29 at 5 35 24 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/47ec2979-9e4b-4b4c-9971-b2c6a5de38ac">
 </p>
 <p>
 Next, we are going to join Client 1 to our domain (domainexpansion.com). So the first thing we have to do is go back on Azure and go to Client 1 and set it's DNS settings to the domain controller's private ip address which again is 10.0.0.4. We do this by taking note of DC-1's private IP address, going to Client 1's NIC uder networking, then to DNS servers, switch Inherit from virtual network to custom, typing in DC-1's private IP address, and then saving it. After this, we restart Client 1, which will allow it to flush the DNS cache. Before this, our Client 1's DNS settings were set to the default Vnet that was automatically created when we first created our virtual machine and now we're are manually switching it to join it to our domain controller, which the domain controller recognizes through our domain name. Also, we can check that Client 1 has the new DNS settings by going to command prompt and pinging DC-1's private IP address. To complete the joining process we go to our Client 1 virtual machine and right click start, open up system, click on rename this PC (advanced), click on Change on the bottom right, and make the domain a member of ours through our admin username: domainexpansion.com\lucas_admin and of course a password. Once that's entered, we click on Ok and the computer will restart completing our joining process. 
@@ -83,14 +84,11 @@ Next, we are going to join Client 1 to our domain (domainexpansion.com). So the 
 
 Step 6
 <p>
-
-
-
-
-
-
+<img width="1109" alt="Screenshot 2023-09-29 at 6 07 27 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/077afd3b-87b9-4c14-b86b-ea6b1b48e7ef">
+-------------------------------------------------------------------------------------------------------------------------------------------
+<img width="1650" alt="Screenshot 2023-09-29 at 6 07 08 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/04b0b733-5e5c-4a4c-b23e-12968e703701">
 </p>
 <p>
-Next, we are going to join Client 1 to our domain (domainexpansi
+Finally, we come to the last part of the lab and the first thing we do is allow 'domain users' access to remote desktop, which beforehand only administrative users were allowed to remote desktop. To do this we right click the start menu, click on system, go to Select users that can remotely access this PC, and add 'Domain Users' now allowing any non-adminstrative user to access remote desktop. Now from here, we log into DC-1 as lucas_admin, open PowerShell ISE as administrator, create a new file and paste the script in there that was provided by our instrutor. The script is some coding that is going to create many different users allowing us to see if we can log into Client 1 as a normal user. 
 </p>
 <br />
