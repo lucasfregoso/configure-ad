@@ -68,14 +68,13 @@ Next we proceed to make an admin and normal user account in Active Directory. We
 
 Step 5
 <p>
-<img width="1389" alt="Screenshot 2023-09-29 at 4 40 08 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/e3d0d363-4c3f-4164-a892-bb36df70ff81">
-
+<img width="1389" alt="Screenshot 2023-09-29 at 5 34 41 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/fc9052a5-4eac-48e3-8942-77c755bc9967">
+<img width="1643" alt="Screenshot 2023-09-29 at 5 35 24 PM" src="https://github.com/lucasfregoso/configure-ad/assets/144977615/47ec2979-9e4b-4b4c-9971-b2c6a5de38ac">
 </p>
 <p>
-Next we proceed to make an admin and normal user account in Active Directory. We go to Active Directory Users and Computers and under our domain name, which I named 'domainexpansion' we create two new Organizational Units and call one '_EMPLOYEES' and the other '_ADMINS.' Next we decide to make a new user since in the work life environment many if not all accounts are tied to some human identity, which helps idenify who is who as well as keeping things organize. So you'll notice that the we are first logged in as 'labuser', which is just an example user for us to do labs as shown in the Command Prompt and then once we make our new user 'Lucas Flames' we recheck on the Command Prompt and see that we are now 'lucas_admin.' Lastly, once we create our own unique user we are going to add them to the domain admins group, which will allow them make changes to the domain while giving us the lab conductor to see how everything works.
+Next, we are going to join Client 1 to our domain (domainexpansion.com). So the first thing we have to do is go back on Azure and go to Client 1 and set it's DNS settings to the domain controller's private ip address which again is 10.0.0.4. We do this by taking note of DC-1's private IP address, going to Client 1's NIC uder networking, then to DNS servers, switch Inherit from virtual network to custom, typing in DC-1's private IP address, and then saving it. After this, we restart Client 1, which will allow it to flush the DNS cache. Before this, our Client 1's DNS settings were set to the default Vnet that was automatically created when we first created our virtual machine and now we're are manually switching it to join it to our domain controller, which the domain controller recognizes through our domain name. Also, we can check that Client 1 has the new DNS settings by going to command prompt and pinging DC-1's private IP address. To complete the joining process we go to our Client 1 virtual machine and right click start, open up system, click on rename this PC (advanced), click on Change on the bottom right, and make the domain a member of ours through our admin username: domainexpansion.com\lucas_admin and of course a password. Once that's entered, we click on Ok and the computer will restart completing our joining process. 
 </p>
 <br />
-
 
 
 
