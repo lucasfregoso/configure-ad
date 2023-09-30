@@ -81,3 +81,16 @@ Next, we are going to join Client 1 to our domain (domainexpansion.com). So the 
 
 
 
+Step 6
+<p>
+
+
+
+
+
+
+</p>
+<p>
+Next, we are going to join Client 1 to our domain (domainexpansi
+</p>
+<br />
