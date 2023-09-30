@@ -24,6 +24,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 3
 - Step 4
 
+(images from left to right)
 <h2>Deployment and Configuration Steps</h2>
 
 Step 1
